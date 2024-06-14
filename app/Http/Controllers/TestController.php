@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Test;//Testモデルを使えるように読み込む
+use Illuminate\Support\Facades\DB;
 
 class TestController extends Controller
 {
@@ -17,9 +18,11 @@ class TestController extends Controller
         $first = Test::findOrFail(1);//1件取得
 
         $where = Test::where('text', '=', '');//条件に合うレコードを取得
-        
 
-        // dd($values);
+        //クエリビルダ
+        $queryBuilder = DB::table('tests')->where('text', '=', 'これはテストです')->select('id', 'text')->get();
+
+        dd($values, $count, $first, $where, $queryBuilder);
     
         return view('tests.test', compact('values'));//compact関数でView側に変数を渡すと楽
     }

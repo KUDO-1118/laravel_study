@@ -1,0 +1,14 @@
+１、マニュアルの言語ファイルをlang/ja/配下にそれぞれ配置する
+  lang/en/auth.php, pagination.php, passwords.php, validation.php
+
+２、validation.phpの'attributes'に追記
+  'attributes' => ['password' => 'パスワード']
+
+３、ja.jsonファイルを作成
+  lang/ja.json
+  {
+    "Whoops! Something went weong.":"何か問題が発生しました。"
+  }
+
+  公式ドキュメントに言語ファイルがないのでgit hubからコピー
+  https://github.com/aokitashipro/udemy_laravel_basic/tree/main/lang/ja

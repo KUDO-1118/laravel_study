@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<!-- {{}}の中でphpが書けるようになる。replaceで_を-に変換。app()のヘルパ関数を用いてgetLocaleメソッド(日本語に置き換える)を取得している -->
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,6 +25,7 @@
 
             <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
                 {{ $slot }}
+                <!-- {{ $slot }}はlogin.blade.phpを引き継いでいる -->
             </div>
         </div>
     </body>

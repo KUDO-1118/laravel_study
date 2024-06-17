@@ -1,2 +1,5 @@
 ミドルウェア
 https://readouble.com/laravel/11.x/ja/middleware.html#assigning-middleware-to-routes
+
+<!-- <html lang="{{ str_replace('_', '-', app()->getLocale()) }}"> -->
+<!-- {{}}の中でphpが書けるようになる。replaceで_を-に変換。app()のヘルパ関数を用いてgetLocaleメソッド(日本語に置き換える)を取得している -->

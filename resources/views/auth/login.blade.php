@@ -43,7 +43,6 @@
 
             <x-primary-button class="ml-3">
                 {{ __('Log in') }}
-                <!-- __は言語かのメソッドを呼び出しているhttps://readouble.com/laravel/11.x/ja/localization.html -->
             </x-primary-button>
         </div>
     </form>

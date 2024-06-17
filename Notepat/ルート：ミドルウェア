@@ -3,3 +3,14 @@ https://readouble.com/laravel/11.x/ja/middleware.html#assigning-middleware-to-ro
 
 <!-- <html lang="{{ str_replace('_', '-', app()->getLocale()) }}"> -->
 <!-- {{}}の中でphpが書けるようになる。replaceで_を-に変換。app()のヘルパ関数を用いてgetLocaleメソッド(日本語に置き換える)を取得している -->
+
+<!-- <x-primary-button class="ml-3">
+    {{ __('Log in') }} -->
+<!-- __は言語かのメソッドを呼び出しているhttps://readouble.com/laravel/11.x/ja/localization.html -->
+
+<!-- <div>{{ Auth::user()->name }}</div> -->
+<!-- Authのファサードを使っている。ログインのユーザーnameを表示させている -->
+
+  <!-- <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
+      {{ $slot }}
+      <!-- {{ $slot }}はlogin.blade.phpを引き継いでいる -->

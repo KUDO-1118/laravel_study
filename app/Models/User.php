@@ -17,11 +17,12 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-    protected $fillable = [
+    protected $fillable = [//データベースに保存ができる
         'name',
         'email',
         'password',
     ];
+    // createメソッドを使用する前に、モデルクラスでfillableまたはguardedプロパティを指定する必要があります。すべてのEloquentモデルはデフォルトで複数代入の脆弱性から保護されているため、こうしたプロパティが必須https://readouble.com/laravel/9.x/ja/eloquent.html#mass-assignment(複数代入)
 
     /**
      * The attributes that should be hidden for serialization.

@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class ContactForm extends Model
 {
     use HasFactory;
+
+    protected $fillable = [//データベースに保存ができる
+        'name',
+        'title',
+        'email',
+        'url',
+        'gender',
+        'age',
+        'contact',
+    ];
 }

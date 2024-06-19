@@ -32,7 +32,7 @@
                             <td class="border-t-2 border-gray-200 px-4 py-3">{{ $contact->name }}</td>
                             <td class="border-t-2 border-gray-200 px-4 py-3">{{ $contact->title }}</td>
                             <td class="border-t-2 border-gray-200 px-4 py-3">{{ $contact->created_at }}</td>
-                            <td class="border-t-2 border-gray-200 px-4 py-3"><a class="text-blue-500" href="{{ route('contacts.show', ['id' => $contact->id ] )}}"></td>
+                            <td class="border-t-2 border-gray-200 px-4 py-3"><a class="text-blue-500" href="{{ route('contacts.show', ['id' => $contact->id ] )}}">詳細</td>
                         </tr>
                         @endforeach
 

@@ -26,7 +26,7 @@ class StroreContactRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => ['required', 'string', 'max:20'],
+            'name' => ['required', 'string', 'max:255'],
             'title' => ['required', 'string', 'max:50'],
             'email' => ['required', 'email', 'max:255'], //テーブル毎に1件ならunique:contact_forms
             'url' => ['url', 'nullable'],

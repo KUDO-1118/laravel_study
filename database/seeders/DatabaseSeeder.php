@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
             TestSeeder::class,
             UserSeeder::class,
         ]);
-        // \App\Models\User::factory(10)->create();
+        \App\Models\ContactForm::factory(100)->create();// 100件のダミーデータを作成
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',

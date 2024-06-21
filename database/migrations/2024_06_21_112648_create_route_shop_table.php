@@ -13,11 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('routes', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->integer('sort_no');
-            $table->timestamps();
+        Schema::create('route_shop', function (Blueprint $table) {
+            $table->foreignId('route_id');
+            $table->foreignId('shop_id');
+            $table->primary(['route_id', 'shop_id']); // テーブルには必ずプライマリキーが必要、idを削除する場合は別で指定。複数キーも設定可能
         });
     }
 
@@ -28,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('routes');
+        Schema::dropIfExists('route_shop');
     }
 };

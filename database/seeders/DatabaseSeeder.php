@@ -17,6 +17,8 @@ class DatabaseSeeder extends Seeder
         $this->call([
             TestSeeder::class,
             UserSeeder::class,
+            AreaSeeder::class,//親のようから書かないといけない
+            ShopSeeder::class
         ]);
         \App\Models\ContactForm::factory(100)->create();// 100件のダミーデータを作成
 
